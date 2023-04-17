@@ -2,6 +2,7 @@ package mycrypt
 
 var ALF_SEM03 []rune = []rune("abcdefghijklmnopqrstuvwxyzæøå0123456789.,:; ")
 
+// Krypter encrypts a message using a given alphabet and shift value
 func Krypter(melding []rune, alphabet []rune, chiffer int) []rune {
 	kryptertMelding := make([]rune, len(melding))
 	for i := 0; i < len(melding); i++ {
@@ -15,11 +16,11 @@ func Krypter(melding []rune, alphabet []rune, chiffer int) []rune {
 	return kryptertMelding
 }
 
+// sokIAlfabetet finds the position of a symbol in an alphabet
 func sokIAlfabetet(symbol rune, alfabet []rune) int {
 	for i := 0; i < len(alfabet); i++ {
 		if symbol == alfabet[i] {
 			return i
-			break
 		}
 	}
 	return -1
