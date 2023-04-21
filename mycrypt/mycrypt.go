@@ -1,4 +1,4 @@
-package mycrypt
+package mycryptpls
 
 var ALF_SEM03 []rune = []rune("abcdefghijklmnopqrstuvwxyzæøå0123456789ABCDEFGHIJKLMONPQRSTUVWXYZÆØÅ.,:; ")
 
